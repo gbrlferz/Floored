@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://do1k6l8gwck57"]
+
+[ext_resource type="FontFile" uid="uid://cb8gtla6vivot" path="res://visuals/themes/fonts/FT88-Regular.ttf" id="1_fheqc"]
+
+[resource]
+default_font = ExtResource("1_fheqc")
+default_font_size = 10
