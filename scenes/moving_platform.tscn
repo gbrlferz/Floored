@@ -15,12 +15,7 @@ height = 16
 size = Vector2(64, 16)
 
 [node name="MovingPlatform" type="AnimatableBody2D"]
-position = Vector2(-168, 152)
 script = ExtResource("1_sb8bm")
-
-[node name="Destination" type="Marker2D" parent="."]
-top_level = true
-position = Vector2(-168, -16)
 
 [node name="ActivationArea" type="Area2D" parent="."]
 collision_layer = 0

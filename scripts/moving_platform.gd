@@ -1,6 +1,6 @@
 extends AnimatableBody2D
 
-@onready var dest := $Destination
+@export var dest: Marker2D
 @onready var activation_area := $ActivationArea
 
 var spawn_position: Vector2

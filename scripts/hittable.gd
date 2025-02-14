@@ -1,8 +1,7 @@
 class_name Hittable
 extends Node
 
-signal on_hit
+signal hit(damage: int)
 
-func hit() -> void:
-	print(get_parent().name + " hit!")
-	on_hit.emit()
+func take_hit(damage: int) -> void:
+	hit.emit(damage)

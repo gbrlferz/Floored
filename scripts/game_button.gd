@@ -8,9 +8,10 @@ extends StaticBody2D
 
 func _ready() -> void:
 	if hittable:
-		hittable.on_hit.connect(_on_hit)
+		hittable.hit.connect(_on_hit)
 
-func _on_hit() -> void:
+
+func _on_hit(_damage: int) -> void:
 	if door:
 		door.open()
 	if only_once:

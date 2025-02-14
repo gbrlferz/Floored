@@ -84,3 +84,7 @@ shoot={
 [physics]
 
 common/physics_interpolation=true
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.0340105, 0.145865, 0.139219, 1)

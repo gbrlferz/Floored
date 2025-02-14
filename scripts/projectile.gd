@@ -25,6 +25,5 @@ func _on_collision() -> void:
 		# If the collider has a HealthComponent, deal damage
 		if collider.has_node("Hittable"):
 			var hittable = collider.get_node("Hittable")
-			hittable.hit()
-
+			hittable.take_hit(damage)
 	queue_free()
