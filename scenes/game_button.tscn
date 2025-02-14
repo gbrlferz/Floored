@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://npbs5pdygwsd"]
+
+[ext_resource type="Script" path="res://scripts/game_button.gd" id="1_o0tq1"]
+[ext_resource type="Script" path="res://scripts/hittable.gd" id="2_pwxjw"]
+
+[sub_resource type="Gradient" id="Gradient_thqul"]
+colors = PackedColorArray(0.36242, 0.0423831, 0.00926245, 1, 0.870588, 0.235294, 0.0901961, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_etqy6"]
+gradient = SubResource("Gradient_thqul")
+width = 16
+height = 16
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fmsjr"]
+size = Vector2(16, 16)
+
+[node name="GameButton" type="StaticBody2D" node_paths=PackedStringArray("door", "hittable")]
+position = Vector2(16, 96)
+script = ExtResource("1_o0tq1")
+door = NodePath("")
+hittable = NodePath("Hittable")
+
+[node name="Hittable" type="Node" parent="."]
+script = ExtResource("2_pwxjw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_etqy6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fmsjr")

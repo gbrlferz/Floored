@@ -10,6 +10,7 @@ radius = 2.0
 top_level = true
 texture_filter = 1
 collision_layer = 0
+collision_mask = 5
 script = ExtResource("1_cp1q6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
